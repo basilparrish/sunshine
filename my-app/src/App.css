@@ -1,38 +1,120 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: flex;
+  flex-direction: row;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffc400;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #000000;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
+  border: 10px solid #947200; /* Add a thick border */
+  border-radius: 15px; /* Round the corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a shadow for depth */
 }
 
 .App-link {
-  color: #61dafb;
+  color: #000000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+  justify-content: flex-start; /* Align content to the top */
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
+  overflow-y: auto; /* Enable scrolling for the content area */
 }
+
+.main-container {
+  flex: 1;
+  margin-left: 240px; /* Leave space for the fixed sidebar */
+  background-color: #ffc400; /* Extend yellow background */
+  border: 10px solid #947200; /* Add a thick border */
+  border-radius: 15px; /* Round the corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a shadow for depth */
+  overflow: hidden; /* Prevent content overflow */
+  min-height: 100vh; /* Ensure it fills the viewport */
+  box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #ffd139;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 10px solid #947200;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.page {
+  padding: 20px;
+  background-color: #ffc400; /* Match the yellow background */
+  border-radius: 15px; /* Round the corners */
+  box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
+  min-height: 100%; /* Ensure it fills the container */
+  width: 100%; /* Take up all available space */
+}
+
+.page h1, .page h2 {
+  color: #947200;
+}
+
+.page p {
+  color: #333;
+}
+
+.blog-post {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.blog-date {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.blog-divider {
+  border: none;
+  border-top: 1px solid #947200; /* Line separator color */
+  margin: 10px 0;
+}
+
+.blog-heading-divider {
+  border: none;
+  border-top: 2px solid #947200; /* Styled divider below the heading */
+  margin: 10px 0 20px; /* Add spacing above and below the divider */
+}
+

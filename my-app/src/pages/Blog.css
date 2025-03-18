@@ -1,0 +1,40 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  padding: 20px;
+  max-width: 1200px; /* Constrain the width of the blog */
+  margin: 0 auto; /* Center the blog container */
+}
+
+.blog h2 {
+  color: #947200;
+  text-align: center; /* Center the heading text */
+}
+
+.blog ul {
+  list-style: none;
+  padding: 0;
+}
+
+.blog-post {
+  margin-bottom: 20px;
+  padding: 20px; /* Add consistent padding inside posts */
+  border: 5px solid #947200; /* Restore the pretty border */
+  border-radius: 10px; /* Add rounded corners */
+  background-color: #ffc400; /* Add background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add depth */
+  width: 100%; /* Ensure posts take full width */
+  max-width: 800px; /* Limit the width for better readability */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.blog-post h3 {
+  margin: 0;
+  color: #947200;
+}
+
+.blog-date {
+  font-size: 0.9em;
+  color: #666;
+}

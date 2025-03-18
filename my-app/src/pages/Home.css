@@ -1,0 +1,26 @@
+.page {
+  padding: 20px;
+  background-color: #ffc400; /* Match the yellow background */
+  border-radius: 15px; /* Round the corners */
+  box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
+  min-height: 100%; /* Ensure it fills the container */
+  width: 100%; /* Take up all available space */
+}
+
+.page h1, .page h2 {
+  color: #947200;
+}
+
+.page p {
+  color: #333;
+}
+
+.page a {
+  color: inherit; /* Inherit the color from the parent element */
+}
+
+.page .divider {
+  border: none;
+  border-top: 2px solid #947200; /* Match the header color */
+  margin: 10px 0; /* Add spacing around the line */
+}
