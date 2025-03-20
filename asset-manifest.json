@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "//dafloorisfake.github.io/Sunshine/static/css/main.a8b0de16.css",
-    "main.js": "//dafloorisfake.github.io/Sunshine/static/js/main.66748db6.js",
+    "main.js": "//dafloorisfake.github.io/Sunshine/static/js/main.728d64dc.js",
     "static/js/453.ed3810f9.chunk.js": "//dafloorisfake.github.io/Sunshine/static/js/453.ed3810f9.chunk.js",
     "static/media/blog3-file1.mp4": "//dafloorisfake.github.io/Sunshine/static/media/blog3-file1.dcf099f711b5766f777a.mp4",
     "static/media/blog1-file1.jpg": "//dafloorisfake.github.io/Sunshine/static/media/blog1-file1.ed114d6ad7f90a1352b2.jpg",
     "index.html": "//dafloorisfake.github.io/Sunshine/index.html",
     "main.a8b0de16.css.map": "//dafloorisfake.github.io/Sunshine/static/css/main.a8b0de16.css.map",
-    "main.66748db6.js.map": "//dafloorisfake.github.io/Sunshine/static/js/main.66748db6.js.map",
+    "main.728d64dc.js.map": "//dafloorisfake.github.io/Sunshine/static/js/main.728d64dc.js.map",
     "453.ed3810f9.chunk.js.map": "//dafloorisfake.github.io/Sunshine/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a8b0de16.css",
-    "static/js/main.66748db6.js"
+    "static/js/main.728d64dc.js"
   ]
 }
