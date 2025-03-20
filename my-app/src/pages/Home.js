@@ -4,8 +4,7 @@ import './Home.css';
 function Home() {
   return (
     <div className="page">
-      <img src={`${process.env.PUBLIC_URL}/favicon.ico`} alt="Site Icon" className="site-icon" />
-      <h1>Welcome to the Domain of Mr. Parrish</h1>
+      <img src="/favicon.ico" alt="Site Icon" className="site-icon" />
       <p>This is the home page. Feel free to explore!</p>
       <div className="contact-info">
         <h2>Contact Info</h2>
