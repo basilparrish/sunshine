@@ -1,15 +1,3 @@
-.collapsible-post {
-  margin-bottom: 20px;
-  padding: 20px; /* Add consistent padding inside posts */
-  border: 5px solid #947200; /* Restore the pretty border */
-  border-radius: 10px; /* Add rounded corners */
-  background-color: #ffc400; /* Add background color */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add depth */
-  width: 100%; /* Ensure it takes full width */
-  max-width: 800px; /* Limit the width for better readability */
-  box-sizing: border-box; /* Include padding and border in width calculation */
-}
-
 .collapsible-post h3 {
   color: #947200;
   text-align: center; /* Center the title */
@@ -17,7 +5,7 @@
 
 .collapsible-post .subtitle {
   font-style: italic;
-  color: #666;
+  color: #000000;
   text-align: center; /* Center the subtitle */
 }
 
@@ -58,15 +46,12 @@
   text-decoration: underline;
 }
 
-.no-files {
-  font-style: italic;
-  color: #666;
-}
-
 .file-divider {
-  margin: 20px 0;
+  margin: 0 auto; /* Center the divider horizontally */
   border: none;
-  border-top: 1px solid #947200;
+  border-top: 2px solid #947200; /* Make the divider visible with a solid color */
+  width: 20vw; /* Set the width to 40% of the viewport */
+  box-sizing: border-box; /* Include border in width calculation */
 }
 
 .file-gallery {
@@ -88,6 +73,13 @@
 
 .file-gallery::-webkit-scrollbar-track {
   background-color: #ffc400;
+}
+
+.divider {
+  border: none;
+  border-top: 2px solid #947200; /* Match the header color */
+  margin: 10px 0; /* Add spacing around the line */
+  box-sizing: border-box; /* Include border in width calculation */
 }
 
 .file-container {

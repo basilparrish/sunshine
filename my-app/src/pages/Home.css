@@ -1,10 +1,12 @@
 .page {
+  text-align: center;
   padding: 20px;
   background-color: #ffc400; /* Match the yellow background */
   border-radius: 15px; /* Round the corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add depth */
+  margin: auto;
+  max-width: 800px; /* Limit the width for better readability */
   box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
-  min-height: 100%; /* Ensure it fills the container */
-  width: 100%; /* Take up all available space */
 }
 
 .page h1, .page h2 {
@@ -19,8 +21,47 @@
   color: inherit; /* Inherit the color from the parent element */
 }
 
-.page .divider {
-  border: none;
-  border-top: 2px solid #947200; /* Match the header color */
-  margin: 10px 0; /* Add spacing around the line */
+.page .site-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.contact-block, .name-block {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #ffd139; /* Slightly darker yellow for contrast */
+  border-radius: 10px; /* Round the corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add depth */
+}
+
+.contact-block h2, .name-block h2 {
+  margin-bottom: 10px;
+  color: #947200;
+}
+
+.contact-block p, .name-block p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.contact-info {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #ffd139; /* Slightly darker yellow for contrast */
+  border-radius: 10px; /* Round the corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add depth */
+  max-width: 800px;
+  margin: 20px auto; /* Center the block below the main box */
+  text-align: center;
+}
+
+.contact-info h2 {
+  margin-bottom: 10px;
+  color: #947200;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  color: #333;
 }

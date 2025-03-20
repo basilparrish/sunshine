@@ -9,8 +9,7 @@ const fileMap = fileContext.keys().reduce((map, filePath) => {
   return map;
 }, {});
 
-function CollapsiblePost({ title, subtitle, date, content, files = [] }) {
-  const [isExpanded, setIsExpanded] = useState(false);
+function CollapsiblePost({ title, subtitle, date, author, content, files = [] }) {
   const [modalFile, setModalFile] = useState(null);
   const [externalLink, setExternalLink] = useState(null);
 
@@ -105,27 +104,23 @@ function CollapsiblePost({ title, subtitle, date, content, files = [] }) {
     <div className="collapsible-post">
       <h3>{title}</h3>
       <p className="subtitle">{subtitle}</p>
-      <p className="date">{date}</p>
-      <button onClick={() => setIsExpanded(!isExpanded)}>
-        {isExpanded ? 'Hide Details' : 'Show Details'}
-      </button>
-      {isExpanded && (
-        <div className="post-details">
-          <p>{content}</p>
-          {files.length > 0 && (
-            <>
-              <hr className="file-divider" />
-              <div className="file-gallery">
-                {files.map((file, index) => (
-                  <div key={index} className="file-container">
-                    {renderFilePreview(file)}
-                  </div>
-                ))}
-              </div>
-            </>
-          )}
-        </div>
-      )}
+      <p className="author">By: {author}</p>
+      <hr className="file-divider" />
+      <div className="post-details">
+        <p>{content}</p>
+        {files.length > 0 && (
+          <>
+            <hr className="file-divider" />
+            <div className="file-gallery">
+              {files.map((file, index) => (
+                <div key={index} className="file-container">
+                  {renderFilePreview(file)}
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+      </div>
       {modalFile && (
         <div className="file-modal" onClick={closeModal}>
           <div className="modal-content no-background" onClick={(e) => e.stopPropagation()}>

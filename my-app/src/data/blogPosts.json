@@ -3,6 +3,7 @@
     "title": "Welcome to My Blog",
     "subtitle": "An introduction to my journey",
     "date": "03/17/2025",
+    "author": "Basil J Parrish",
     "content": "This is the first post on my blog. Stay tuned for more updates!",
     "files": ["blog1-file1.jpg"]
   },
@@ -10,14 +11,32 @@
     "title": "Learning the Web",
     "subtitle": "Dealing with web development in my way, and being behind in code class",
     "date": "03/17/2025",
-    "content": "So, I am in a coding class, and it's great! I was making a nice and cool survival game, and it was going great. I was meeting with a cool tutor 2-3 times a week and I was off like a rocket. But, then something happened. I decided to temporarily ditch unity and c# and learn web dev… what a fucking idiot i am right? Anyway, my wheels were stuck in the mud, I didn't make any progress, I had info from my meetings, but I didn't have the spark, the info I needed. and then, i got sick. And while I was sick, all I could do was think. So i did, i thought and thought and i thought about web dev and about why i was failing when, boom realization one hit me! I was being an idiot again! I already knew a formula to succeed in learning coding dev stuff! The way to do it is, try to make something, anything. Then the second you don't know how to do something, research how! Now, with this knowledge in hand and the greatness of feeling a bit better, I tried again. And it didn't work again! So back to the drawing board I went…. A new plan. I needed a parrot. What do I mean? Well what i had realized is the reason i was so good at getting into game dev projects is because i spent my off time being excited about games and excited about game dev, and i had so many thoughts about it and it so much so it felt like i had a parrot. So how do I get that parrot? I watch the same type of videos I do about game dev, but about web dev! Yea! So I tried it, and it totally didn't work at all. Why? Because web dev culture online is totally different. Like very few are posting about. “Web dev log 5: I added a blog section!” so i was shit out of luck. Soooooo…. Nothing was working. It sucked. But how did I get here? You're looking at a website now are you? Well basically i was like okay, i'll do both, i wanna code, ill code either, and make blog update dev logs on the website, upgrading the website as i go! So yea, i made a base website with a little help from copilot, and now we're here and i have surfaced from the land of code shame land ready to impress again, with double the freedom. So yay! caio!",
+    "author": "Basil J Parrish",
+    "content": "So, I am in a coding class, and it's great! I was making a nice and cool survival game, and it was going great. I was meeting with a cool tutor 2-3 times a week and I was off like a rocket. But, then something happened. I decided to temporarily ditch unity and c# and learn web dev… what a idiot i am right? Anyway, my wheels were stuck in the mud, I didn't make any progress, I had tips from my meetings, but I didn't have the spark, the info I needed. and then, i got sick. And while I was sick, all I could do was think. So i did, i thought and thought and i thought about web dev and about why i was failing when, boom realization one hit me! I was being an idiot again! I already knew a formula to succeed in learning coding dev stuff! The way to do it is, try to make something, anything. Then the second you don't know how to do something, research how! Now, with this knowledge in hand and the greatness of feeling a bit better, I tried again. And it didn't work again! So back to the drawing board I went…. A new plan. I needed a parrot. What do I mean? Well what i had realized is the reason i was so good at getting into game dev projects is because i spent my off time being excited about games and excited about game dev, and i had so many thoughts about it and it so much so it felt like i had a parrot. So how do I get that parrot? I watch the same type of videos I do about game dev, but about web dev! Yea! So I tried it, and it totally didn't work at all. Why? Because web dev culture online is totally different. Like very few are posting about. “Web dev log 5: I added a blog section!” so i was shit out of luck. Soooooo…. Nothing was working. It sucked. But how did I get here? You're looking at a website now are you? Well basically i was like okay, i'll do both, i wanna code, ill code either, and make blog update dev logs on the website, upgrading the website as i go! So yea, i made a base website with a little help from copilot, and now we're here and i have surfaced from the land of code shame land ready to impress again, with double the freedom. So yay! caio!",
     "files": []
   },
   {
     "title": "macbeth can be silly",
     "subtitle": "heres my sililoque memorization method",
     "date": "03/17/2025",
+    "author": "Basil J Parrish",
     "content": "a lil mp4 of the thing that it is.....",
     "files": ["blog3-file1.mp4"]
+  },
+  {
+    "title": "new oridont video",
+    "subtitle": "its pretty rad",
+    "date": "03/19/2025",
+    "author": "Basil J Parrish",
+    "content": "heres the link",
+    "files": ["https://www.youtube.com/watch?v=JCzcSU6gDL8"]
+  },
+  {
+    "title": "pizza Time!",
+    "subtitle": "Lets Eat!",
+    "date": "03/19/2025",
+    "author": "Travelin' Miles",
+    "content": "It's always a good time for pizza!",
+    "files": []
   }
 ]

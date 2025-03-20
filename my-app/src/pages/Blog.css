@@ -1,15 +1,201 @@
+html, body {
+  overflow: hidden; /* Prevent scrolling on the main page window */
+  height: 100%; /* Ensure the height is set to 100% */
+}
+
 .blog {
   display: flex;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent horizontal scrolling */
+  width: 100%; /* Ensure the blog container takes full width */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.date-sidebar {
+  width: 250px; /* Fixed width for the sidebar */
+  background-color: #ffd139;
+  border-right: 2px solid #947200;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #947200;
+  border-radius: 5px;
+  font-size: 0.9em;
+  box-sizing: border-box;
+}
+
+.date-list {
+  display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
+  gap: 20px; /* Add spacing between date groups */
+}
+
+.date-group {
+  width: 100%; /* Ensure date groups take full width */
+}
+
+.date-button {
+  padding: 10px 15px;
+  background-color: #ffd139; /* Updated background color */
+  border: 1px solid #947200;
+  border-radius: 5px;
+  font-size: 0.9em;
+  color: #947200;
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Make the button take full width */
+  box-sizing: border-box;
+  position: relative;
+}
+
+.date-button .new-indicator {
+  font-size: 0.8em;
+  font-style: italic;
+  color: #947200;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+}
+
+.date-button.static {
+  background-color: #ffd139;
+  color: #947200;
+  font-weight: bold;
+}
+
+.date-button:hover {
+  background-color: #947200;
+  color: #fff;
+}
+
+.date-button.active {
+  background-color: #947200;
+  color: #fff;
+}
+
+.content-area {
+  flex: 1; /* Take up the remaining space */
   padding: 20px;
-  max-width: 1200px; /* Constrain the width of the blog */
-  margin: 0 auto; /* Center the blog container */
+  overflow-y: auto; /* Enable vertical scrolling for the entire content area */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add spacing between posts */
+}
+
+.post-titles-box {
+  margin-top: 10px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Add spacing between post titles */
+  width: 100%; /* Ensure the box takes full width */
+}
+
+.post-title-button {
+  padding: 8px 12px; /* Smaller padding for title buttons */
+  background-color: #ffe590; /* Updated background color */
+  border: 1px solid #947200;
+  border-radius: 5px;
+  font-size: 0.8em; /* Smaller font size */
+  color: #947200;
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Make the button take full width */
+  box-sizing: border-box;
+  position: relative;
+}
+
+.post-title-button .new-indicator {
+  font-size: 0.8em;
+  font-style: italic;
+  color: #947200;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+}
+
+.post-title-button:hover {
+  background-color: #947200;
+  color: #fff;
+}
+
+.post-title-button.active {
+  background-color: #957610; /* Updated background color */
+  color: #fff;
+}
+
+.blog-post-content {
+  margin-top: 20px; /* Add spacing above the post content */
+  padding: 20px; /* Add padding to ensure text doesn't touch the edges */
+  border: 2px solid #947200; /* Add a rounded box outline */
+  border-radius: 10px; /* Add rounded corners */
+  background-color: #ffd139; /* Updated background color */
+  width: 100%; /* Ensure content takes full width */
+  max-width: 800px; /* Limit the width for better readability */
+  height: auto; /* Ensure posts maintain their height */
+  overflow: visible; /* Remove vertical scrolling within the post */
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box; /* Include padding and border in width calculation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add depth */
+  position: relative; /* For positioning controls */
+}
+
+.blog-post-content.last-post {
+  margin-bottom: 40px; /* Add extra space below the last post */
+}
+
+.post-controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.post-controls button {
+  background-color: #947200;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+.post-controls button:hover {
+  background-color: #ffd139;
+  color: #947200;
 }
 
 .blog h2 {
   color: #947200;
   text-align: center; /* Center the heading text */
+}
+
+.post-titles {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Add spacing between post titles */
+}
+
+.blog-date-group {
+  margin-top: 20px; /* Add spacing above the posts */
+  width: 100%; /* Ensure groups take full width */
+}
+
+.blog-date-header {
+  font-size: 1.5em;
+  color: #947200;
+  margin-bottom: 20px; /* Add spacing below the date header */
+  text-align: center; /* Center the date header */
 }
 
 .blog ul {
@@ -37,4 +223,56 @@
 .blog-date {
   font-size: 0.9em;
   color: #666;
+}
+
+.blog-date-group .blog-post:last-child {
+  border-bottom: none; /* Remove the previous bottom border */
+  padding-bottom: 0; /* Remove extra padding */
+}
+
+.file-gallery {
+  display: flex;
+  justify-content: center; /* Center file content */
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.file-divider {
+  margin: 0; /* Remove margin to make the divider touch the outline */
+  border: none;
+  border-top: 1px solid #947200; /* Default divider color */
+  width: 50.5vw; /* Set the width to 40% of the viewport */
+  box-sizing: border-box; /* Include border in width calculation */
+}
+
+.blog-welcome {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffc400; /* Match the yellow background */
+  border-radius: 15px; /* Round the corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add depth */
+  margin: auto;
+  max-width: 800px; /* Limit the width for better readability */
+}
+
+.blog-welcome .site-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.blog-welcome h1 {
+  color: #947200;
+}
+
+.blog-welcome p {
+  color: #333;
+}
+
+.blog-welcome .divider {
+  border: none;
+  border-top: 2px solid #947200; /* Match the header color */
+  margin: 10px auto; /* Center the line horizontally */
+  width: 80%; /* Adjust width for better alignment */
+  box-sizing: border-box; /* Include border in width calculation */
 }
