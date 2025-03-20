@@ -238,11 +238,12 @@ html, body {
 }
 
 .file-divider {
-  margin: 0; /* Remove margin to make the divider touch the outline */
+  margin: 0 auto; /* Center the divider horizontally */
   border: none;
   border-top: 1px solid #947200; /* Default divider color */
-  width: 50.5vw; /* Set the width to 40% of the viewport */
-  box-sizing: border-box; /* Include border in width calculation */
+  width: calc(100% - 20px); /* Adjust width to account for padding or scrollbar */
+  max-width: 800px; /* Ensure it doesn't exceed the content width */
+  box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
 .blog-welcome {

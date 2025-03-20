@@ -20,11 +20,7 @@ function CollapsiblePost({ title, subtitle, date, author, content, files = [] })
     if (file.startsWith('http')) {
       return file; // Return the URL directly for external links
     }
-    const src = fileMap[file];
-    if (!src) {
-      console.error(`File not found in fileMap: ${file}`);
-    }
-    return src || null;
+    return `${process.env.PUBLIC_URL}/attachments/${file}`; // Use public/attachments path
   };
 
   const getYouTubeThumbnail = (url) => {
