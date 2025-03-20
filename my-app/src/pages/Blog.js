@@ -64,9 +64,6 @@ function Blog({ posts }) {
     groupedPosts[date].some((post) => filteredPosts.includes(post))
   );
 
-  const imagePath = `${process.env.PUBLIC_URL}/data/attachments/blog1-file1.jpg`;
-  console.log('Blog image path:', imagePath); // Debugging log
-
   return (
     <div className="blog">
       <div className="date-sidebar">
@@ -112,7 +109,7 @@ function Blog({ posts }) {
       <div className="content-area">
         {openPosts.length === 0 ? (
           <div className="blog-welcome">
-            <img src={imagePath} alt="Site Icon" className="site-icon" />
+            <img src="/favicon.ico" alt="Site Icon" className="site-icon" />
             <h1>Welcome to the Blog!</h1>
             <hr className="divider" />
             <p>Explore posts and updates from Basil J Parrish.</p>

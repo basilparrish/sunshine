@@ -2,12 +2,9 @@ import React from 'react';
 import './Home.css';
 
 function Home() {
-  const imagePath = `${process.env.PUBLIC_URL}/data/attachments/blog1-file1.jpg`;
-  console.log('Home image path:', imagePath); // Debugging log
-
   return (
     <div className="page">
-      <img src={imagePath} alt="blah" className="sunny" />
+      <img src={`${process.env.PUBLIC_URL}/data/attachments/blog1-file1.jpg`} alt="blah" className="sunny" />
       <h1>Welcome to the Domain of Mr. Parrish</h1>
       <p>This is the home page. Feel free to explore!</p>
       <div className="contact-info">
