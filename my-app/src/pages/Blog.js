@@ -109,7 +109,7 @@ function Blog({ posts }) {
       <div className="content-area">
         {openPosts.length === 0 ? (
           <div className="blog-welcome">
-            <img src="/favicon.ico" alt="Site Icon" className="site-icon" />
+            <img src={`${process.env.PUBLIC_URL}/favicon.ico`} alt="Site Icon" className="site-icon" />
             <h1>Welcome to the Blog!</h1>
             <hr className="divider" />
             <p>Explore posts and updates from Basil J Parrish.</p>
