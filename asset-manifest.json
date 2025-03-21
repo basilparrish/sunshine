@@ -1,15 +1,24 @@
 {
   "files": {
-    "main.css": "/sunshine/static/css/main.16bbd54c.css",
-    "main.js": "/sunshine/static/js/main.ca9d173e.js",
-    "static/js/453.ed3810f9.chunk.js": "/sunshine/static/js/453.ed3810f9.chunk.js",
+    "main.css": "/sunshine/static/css/main.a3c71c89.chunk.css",
+    "main.js": "/sunshine/static/js/main.cc4b3abc.chunk.js",
+    "main.js.map": "/sunshine/static/js/main.cc4b3abc.chunk.js.map",
+    "runtime-main.js": "/sunshine/static/js/runtime-main.8debe0cf.js",
+    "runtime-main.js.map": "/sunshine/static/js/runtime-main.8debe0cf.js.map",
+    "static/js/2.bdf44470.chunk.js": "/sunshine/static/js/2.bdf44470.chunk.js",
+    "static/js/2.bdf44470.chunk.js.map": "/sunshine/static/js/2.bdf44470.chunk.js.map",
+    "static/js/3.76f02b70.chunk.js": "/sunshine/static/js/3.76f02b70.chunk.js",
+    "static/js/3.76f02b70.chunk.js.map": "/sunshine/static/js/3.76f02b70.chunk.js.map",
     "index.html": "/sunshine/index.html",
-    "main.16bbd54c.css.map": "/sunshine/static/css/main.16bbd54c.css.map",
-    "main.ca9d173e.js.map": "/sunshine/static/js/main.ca9d173e.js.map",
-    "453.ed3810f9.chunk.js.map": "/sunshine/static/js/453.ed3810f9.chunk.js.map"
+    "precache-manifest.3718abbc438513c4a67b9efb7fc92953.js": "/sunshine/precache-manifest.3718abbc438513c4a67b9efb7fc92953.js",
+    "service-worker.js": "/sunshine/service-worker.js",
+    "static/css/main.a3c71c89.chunk.css.map": "/sunshine/static/css/main.a3c71c89.chunk.css.map",
+    "static/js/2.bdf44470.chunk.js.LICENSE.txt": "/sunshine/static/js/2.bdf44470.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/css/main.16bbd54c.css",
-    "static/js/main.ca9d173e.js"
+    "static/js/runtime-main.8debe0cf.js",
+    "static/js/2.bdf44470.chunk.js",
+    "static/css/main.a3c71c89.chunk.css",
+    "static/js/main.cc4b3abc.chunk.js"
   ]
 }
